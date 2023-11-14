@@ -1,12 +1,18 @@
-let a = +prompt();
+let a = diemKT = +prompt();
 
-if (a >= 8) {
-    alert("Loại giỏi")
-} else if (a >5) {
-    alert("Loại khá")
-} else if (a > 3) {
-    alert("Loại trung bình")
-}
-else {
+let b = diemGK = +prompt();
+
+let c = diemCK = +prompt();
+
+let tongket = ((a + b +c) / 3);
+
+if (tongket >= 8.5) {
+    alert("Loại Giỏi")
+} else if (tongket < 8.5 && tongket >= 7) {
+    alert("Loại Khá")
+} else if (tongket < 7 && tongket >= 5) {
+    alert("Loại TB")
+} else {
     alert("Ở lại lớp")
 }
+
